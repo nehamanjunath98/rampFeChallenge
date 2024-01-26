@@ -25,7 +25,7 @@ export function App() {
     transactionsByEmployeeUtils.invalidateData()
 
     await employeeUtils.fetchAll()
-    setIsLoading(false) // Solution Bug #5
+    setIsLoading(false) // Bug #5
     await paginatedTransactionsUtils.fetchAll()
   }, [employeeUtils, paginatedTransactionsUtils, transactionsByEmployeeUtils])
 
@@ -72,7 +72,7 @@ export function App() {
               return
             }
 
-            // Solution Bug #3
+            // Bug #3
             if (newValue.firstName === "All" && newValue.lastName === "Employees") {
               loadAllTransactions()
               setShowViewMore(true)

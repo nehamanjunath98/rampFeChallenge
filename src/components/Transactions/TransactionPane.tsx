@@ -30,7 +30,7 @@ export const TransactionPane: TransactionPaneComponent = ({
             newValue,
           })
 
-          await clearCache() // Solution  Bug #7 
+          await clearCache() // Bug #7 
           setApproved(newValue)
         }}
       />

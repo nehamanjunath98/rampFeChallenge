@@ -22,7 +22,7 @@ export function usePaginatedTransactions(): PaginatedTransactionsResult {
         return response
       }
 
-      // Solution Bug #4
+      // Bug #4
       const newData = paginatedTransactions?.data || []
 
       return { data: [...newData, ...response.data], nextPage: response.nextPage }
